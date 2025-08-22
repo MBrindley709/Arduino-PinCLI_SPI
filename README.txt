@@ -4,6 +4,8 @@ Exercises basic pin functions using typed commands (CLI) over the serial port, a
 play with the hardware without writing any code.  Not all board/hardware functions are implemented;
 if you need them, implementation is on you!
 
+*** Note:  Terminal program should be set to use CR or CR/LF line ending.
+
 I went looking for a CLI (Command Line Interface) for arduino and I only found one.  
 I had trouble believing that after all this time, there wasn't an arduino CLI program
 which would exercise basic functions like setting pins and such.  So, I created this.
