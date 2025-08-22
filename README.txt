@@ -56,10 +56,11 @@ Scripts directory
 -----------------
 I connected up the Nano's SPI bus to a couple of 74HC595 8-bit shift registers.  I then connected the 74HC595's
 outputs to 16 LEDs which were in 2, 8-LED bargraphs.  The 595_test.txt file contains the sequence of commands 
-I copied and pasted (in mass) into Tera Term to test the software out.  It executed to quickly to do a good 
+I copied and pasted (in mass) into Tera Term to test the software out.  It executed too quickly to do a good 
 job of testing, so I added the delay commands.  That meant I had to add delays in Tera Term to keep from 
 over-running the Nano's serial port buffer.
 
 The 299_test.txt file has the commands for testing with 2 74HC299 8-bit shift registers instead of 74HC595.
 
 Both types of shift registers worked in 2 of the 4 SPI modes.
+
