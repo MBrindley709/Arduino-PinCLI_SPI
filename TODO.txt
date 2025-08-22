@@ -1,0 +1,17 @@
+PinCLI TODO list, February 2021
+- Use structures for command information instead of separate arrays.
+- Add echo() macro or other method to allow turning enabling/disabling echoing the received character back to the sender.
+   - Maybe a command for brief versus verbose mode?
+- Add #defines for options
+   - Simple editing (backspace)
+   - echo received character
+   - 
+- Maybe add an option for more complicated line editing?  History and moving back and forth in the line without erasing.
+- Comments (single line or to end of line) so files of commands can be commented.
+- Reuse argument string buffer so only 1 is needed.
+- Change to Arduino standard line ending (CR LF)?
+- Throw out initial spaces?
+- Going to need binary mode
+- Implement early drop out searching of alphabetized lists.
+- Implement more error checking on commands and arguments
+- Implement ADC setup and conversions.

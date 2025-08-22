@@ -1,0 +1,68 @@
+! '299 SPI setup
+! NOTE: recommend setting line delay for pasting to 100ms (Tera Term: Setup->additional settings-> copy and paste tab 
+pmode 2 o
+pw 2 0
+pw 2 1
+pmode 10 o
+pw 10 1
+spistart msbfirst mode0
+
+pmode 8 o
+pw 8 1
+
+spirw 255
+
+delay 300
+
+spirw 3
+delay 300
+
+spirw16 65535
+delay 300
+
+spirw16 1
+delay 300
+
+spirw16 2
+delay 300
+
+spirw16 4
+delay 300
+
+spirw16 8
+delay 300
+
+spirw16 16
+delay 300
+
+spirw16 32
+delay 300
+
+spirw16 64
+delay 300
+
+spirw16 128
+delay 300
+
+spirw16 256
+delay 300
+
+spirw16 512
+delay 300
+
+spirw16 1024
+delay 300
+
+spirw16 2048
+delay 300
+
+spirw16 4096
+delay 300
+
+spirw16 8192
+delay 300
+
+spirw16 16384
+delay 300
+
+spirw16 32768

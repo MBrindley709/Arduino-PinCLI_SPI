@@ -1,0 +1,68 @@
+All commands and arguments are not case sensitive.
+
+The commands are trying to mirror the standard Arduino library routines so that
+translating between PinCLI and the library is fairly simple.
+
+Arguments are generically given as a name enclosed in angle brackets, <>.  In use,
+substitute the name (including the angle brackets) with the appropriate value.
+
+*** Know the capabilities and restrictions for your board! ***
+For example, on the Arduino nano, dgital pins 0 and 1 are used for the serial port
+and digital pin 13 is the on board LED.
+
+DELAY <milliseconds>
+
+
+HELP
+
+
+PMODE <pin> <mode>
+   Set digital pin mode.
+   
+   <pin> - pin number
+   
+   <mode> - desired pin mode
+      I -> Input
+      O -> Output
+      IP -> INPUT_PULLUP
+  
+PR <pin>
+   Digital pin read.
+   
+   <pin> - pin number
+   
+   return:  0 or 1 -> the value on the pin
+            <0 -> error
+     
+PW <pin> <value>
+   Digital pin write.
+   
+   <pin> - pin number
+   <value> - 0 or 1, the value for the pin
+
+SPIEND
+   End SPI transaction.
+
+SPIRW <byte>
+   Read and Write one byte on SPI.
+
+   <byte> - value to write
+
+   return:  value read from SPI bus
+
+SPIRW16 <value>
+   Read and Write 16-bit (2 byte) value on SPI.
+
+   <value> - number to write, 0 to 65535
+
+   return:  16-bit value read from SPI bus
+
+SPISTART <data order> <data mode>
+   Start a SPI transaction
+   
+   <data order> - lsbfirst or msbfirst
+   <data mode> - mode0, mod1, mode2, or mode3 (see Arduino SPI documentation for definitions)
+   If arguments are missing or invalid, then defaults are used.
+   
+   
+     
